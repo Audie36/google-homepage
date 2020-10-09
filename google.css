@@ -1,0 +1,29 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-areas: "header header header""content""footer footer footer";
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#GoogleHomeLogo{
+    justify-self: center;
+}
+#SearchField{
+    justify-self: center;
+}
+#SearchField:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+#SearchButton{
+
+}
+#FeelingLuckyButton{
+
+}
+#NewsLink{
+    justify-self: center;
+}
