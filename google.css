@@ -1,7 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     display: grid;
-    grid-template-areas: "header header header""content""footer footer footer";
+    grid-template-columns: 20% 60% 20%;
 }
 a{
     text-decoration: none;
@@ -11,19 +11,23 @@ a:hover{
 }
 #GoogleHomeLogo{
     justify-self: center;
+    grid-column: 2/3;
 }
 #SearchField{
     justify-self: center;
+    grid-column: 2/3;
 }
 #SearchField:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+    grid-column: 2/3;
 }
 #SearchButton{
-
+    grid-column: 2/3;
 }
 #FeelingLuckyButton{
-
+    grid-column: 2/3;
 }
 #NewsLink{
     justify-self: center;
+    grid-column: 2/3;
 }
