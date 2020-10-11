@@ -2,32 +2,83 @@ body{
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 20% 60% 20%;
+    /* grid-template-rows: 10px 1fr 10px; */
+    /* justify-content: space-evenly; */
+    grid-template-areas: 
+        "header header header" 
+        "content content content"
+        "footer footer footer";
 }
+
+/* #header{
+    grid-area: header;
+} */
+.contentContainer{
+    /* grid-column: 2/3; */
+    grid-area: content;
+    justify-items: center;
+}
+/* #footer{
+    grid-area: footer;
+    background-color: #F2F2F2;
+    border-top-style: solid;
+    border-top-color: #ccc5c5;
+    padding: 20px 0px;
+} */
 a{
     text-decoration: none;
 }
 a:hover{
     text-decoration: underline;
 }
-#GoogleHomeLogo{
+
+ #googleHomeLogo{
     justify-self: center;
-    grid-column: 2/3;
+    /* grid-column: 2/3; */
 }
 #SearchField{
-    justify-self: center;
-    grid-column: 2/3;
+    /* justify-self: center;
+    grid-column: 2/3; */
+    width: 500px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: #ccc5c5;
 }
 #SearchField:hover{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
-    grid-column: 2/3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+    /* justify-self: center;
+    grid-column: 2/3; */
+    width: 500px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: #ccc5c5;
+}
+#buttonContainer{
+    /* grid-column: 2/3;
+    justify-self: center; */
+}
+.button{
+    padding: 10px;
+    border-style: none;
+    border-radius: 5px;
 }
 #SearchButton{
-    grid-column: 2/3;
+    /* grid-column: 2/3; */
+    width: 150px;
+    background-color: #F2F2F2;
+    margin-right: 5px;
 }
 #FeelingLuckyButton{
-    grid-column: 2/3;
+    /* grid-column: 2/3; */
+    width: 150px;
+    background-color: #F2F2F2;
+    margin-left: 5px;
 }
 #NewsLink{
-    justify-self: center;
-    grid-column: 2/3;
+    /* justify-self: center;
+    grid-column: 2/3; */
 }
