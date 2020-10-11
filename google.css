@@ -6,12 +6,12 @@ body{
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 1fr 8fr 2fr 1fr;
-    /* justify-content: space-evenly; */
+    grid-template-rows: 1fr 1fr 5fr 4fr 1fr;
     grid-template-areas: 
-        "header header header" 
+        "header header header"
+        ". . ." 
         ". content ."
-        ". content ."
+        ". . ."
         "footer footer footer";
     font-size: large;
 
@@ -21,9 +21,17 @@ body{
     grid-area: header;
 }
 #main{
-    /*grid-column: 2/3;*/
+
     grid-area: content;
     justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-areas: 
+        ". googlelogo googlelogo ."
+        ". searchField searchField ."
+        ". buttonDiv buttonDiv ."
+        ". newsLink newsLink .";
     
 }
 
@@ -35,40 +43,40 @@ a:hover{
 }
 
 #googleHomeLogo{
-    /*justify-self: center;
-    grid-column: 2/3;*/
-    margin: 30px;
+    
+    grid-area: googlelogo;
+    margin: 5px;
 }
 #SearchField{
-    /*justify-self: center;
-    grid-column: 2/3;*/
+    
     width: 500px;
     height: 50px;
     border-style: solid;
     border-radius: 30px;
     border-width: 1px;
     border-color: #ccc5c5;
+    grid-area: searchField;
 }
 #SearchField:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
-    justify-self: center;
-    /*grid-column: 2/3;*/
+    
     width: 500px;
     height: 50px;
     border-style: solid;
     border-radius: 30px;
     border-width: 1px;
     border-color: #ccc5c5;
+    grid-area: searchField;
 }
 #buttonContainer{
-    /*grid-column: 2/3;
-    justify-self: center;*/
-    margin: 40px;
+    grid-area: buttonDiv;
 }
 .button{
     padding: 10px;
     border-style: none;
     border-radius: 5px;
+    font-size: large;
+
 }
 .button:hover{
     border-style: solid;
@@ -76,20 +84,20 @@ a:hover{
     border-color: #ccc5c5;
 }
 #SearchButton{
-    grid-column: 2/3;
+
     width: 150px;
     background-color: #F2F2F2;
     margin-right: 5px;
 }
 #FeelingLuckyButton{
-    grid-column: 2/3;
-    width: 200px;
+
+    width: 175px;
     background-color: #F2F2F2;
     margin-left: 5px;
 }
 #NewsLink{
-    justify-self: center;
-    grid-column: 2/3;
+    grid-area: newsLink;
+    font-size: medium;
 }
 #footer{
     grid-area: footer;
