@@ -6,19 +6,41 @@ body{
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 1fr 1fr 5fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 5fr 1fr;
     grid-template-areas: 
         "header header header"
         ". . ." 
         ". content ."
         ". . ."
         "footer footer footer";
-    font-size: large;
+    font-size: medium;
 
 }
 
 #header{
     grid-area: header;
+    display: grid;
+    grid-template-areas:
+    "left center right";
+    font-size: medium;
+}
+#leftheader{
+    grid-area: left;
+    align-self: center;
+    justify-self: start;
+    margin-left: 30px;
+}
+#leftheader a{
+    margin: 10px;
+}
+#rightheader{
+    grid-area: right;
+    align-self: center;
+    justify-self: end;
+    margin-right: 30px;
+}
+#rightheader a{
+    margin: 10px;
 }
 #main{
 
@@ -32,7 +54,7 @@ body{
         ". searchField searchField ."
         ". buttonDiv buttonDiv ."
         ". newsLink newsLink .";
-    
+
 }
 
 a{
@@ -105,4 +127,24 @@ a:hover{
     border-top-style: solid;
     border-top-color: #ccc5c5;
     padding: 20px 0px;
+    display: grid;
+    grid-template-areas: "left center right";
+}
+#left-footer{
+    grid-area: left;
+    align-self: center;
+    justify-self: start;
+    margin-left: 20px;
+}
+#left-footer a{
+    margin: 20px;
+}
+#right-footer{
+    grid-area: right;
+    align-self: center;
+    justify-self: end;
+    margin-right: 20px;
+}
+#right-footer a{
+    margin: 20px;
 }
