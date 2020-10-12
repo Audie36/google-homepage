@@ -22,7 +22,7 @@ body{
     display: grid;
     grid-template-areas:
     "left center right";
-    font-size: medium;
+    font-size: small;
 }
 #leftheader{
     grid-area: left;
@@ -97,7 +97,8 @@ a:hover{
     padding: 10px;
     border-style: none;
     border-radius: 5px;
-    font-size: large;
+    font-size: small;
+    color: gray;
 
 }
 .button:hover{
